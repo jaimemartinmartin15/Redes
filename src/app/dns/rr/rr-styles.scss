@@ -1,0 +1,19 @@
+@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+
+:host {
+    display: block;
+}
+
+dt {
+    color: $color-orange;
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    dd {
+        margin: 0;
+    }
+}

@@ -1,0 +1,59 @@
+@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+
+:host {
+    display: block;
+}
+
+.title {
+    text-align: center;
+}
+
+.file-name {
+    display: inline;
+    font-weight: normal;
+    background-color: gainsboro;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h3 + p {
+    margin-top: 5px;
+}
+
+app-terminal-code {
+    margin-bottom: 18px;
+}
+
+.block-sintax,
+.comment-sintax {
+    background-color: #dedede;
+    white-space: nowrap;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.configure-dns-ubuntu-img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.configure-dns-windows-img {
+    width: 100%;
+}
+
+@media (max-width: 830px) {
+    .configure-dns-ubuntu-img {
+        width: 100%;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+}
