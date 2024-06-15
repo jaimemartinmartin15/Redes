@@ -1,5 +1,5 @@
 name: Build And Deploy
-run-name: Deploy BasesDeDatos to AWS S3
+run-name: Deploy Redes to AWS S3
 
 on:
   workflow_dispatch: # allow manual trigger
