@@ -1,6 +1,6 @@
 # Redes
 
-Angular web page that explains database systems and sql. Deployed to <https://jaimeelingeniero.es/redes>
+Angular web page that explains computer networks and the services that make it possible. Deployed to <https://jaimeelingeniero.es/redes>
 
 [![Build And Deploy](https://github.com/jaimemartinmartin15/Redes/actions/workflows/build-and-publish.yml/badge.svg)](https://github.com/jaimemartinmartin15/Redes/actions/workflows/build-and-publish.yml)
 

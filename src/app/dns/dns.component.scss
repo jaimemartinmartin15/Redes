@@ -1,0 +1,165 @@
+@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+
+:host {
+    display: block;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+}
+
+.ip {
+    font-style: italic;
+    color: #272727;
+}
+
+.host-name-example-img {
+    margin-top: 15px;
+    width: 90%;
+}
+
+.definitions,
+#rr-section {
+    dt {
+        color: $color-orange;
+
+        &:not(:first-child) {
+            margin-top: 15px;
+        }
+    }
+
+    ul {
+        margin: 0;
+    }
+}
+
+.dns-scheme-img {
+    display: block;
+    width: 70%;
+    margin: 15px auto;
+}
+
+.dns-resolving-domain {
+    position: relative;
+    text-align: center;
+
+    img {
+        width: 90%;
+    }
+
+    .controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 15px;
+
+        button {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            font-size: 0.9rem;
+        }
+    }
+
+    .explanation {
+        background-color: $color-background-panel;
+        border: 2px solid $color-orange;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+.nslookup-img,
+.anycast-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto 40px auto;
+}
+
+.rr-format {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    div {
+        background-color: rgb(211, 251, 251);
+        padding: 0 5px;
+    }
+}
+
+.tabs {
+    display: flex;
+    justify-content: stretch;
+    gap: 15px;
+    border-bottom: 2px solid $color-blue;
+
+    span {
+        min-width: 8%;
+        text-align: center;
+        flex-grow: 1;
+        cursor: pointer;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        &.selected {
+            background-color: $color-box-shadow;
+        }
+
+        &:hover:not(.selected) {
+            background-color: gainsboro;
+        }
+    }
+}
+
+.zone-scheme-img {
+    display: block;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.organization-dns-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+p[responsive-layout-content-footer] {
+    padding-bottom: 40px;
+}
+
+@media (max-width: 575px) {
+    .dns-scheme-img,
+    .host-name-example-img,
+    .nslookup-img,
+    .anycast-img,
+    .zone-scheme-img,
+    .organization-dns-img {
+        width: 100%;
+    }
+
+    .dns-resolving-domain img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .rr-format {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+        border: none;
+
+        span {
+            border-bottom: 2px solid $color-blue;
+        }
+    }
+
+    dd {
+        margin: 0;
+    }
+}
